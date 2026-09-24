@@ -1,0 +1,35 @@
+questions = [
+    ("What is the capital of India?", "Delhi"),
+    ("Which language is used for AI?", "Python"),
+    ("2 + 2 = ?", "4")
+]
+score = 0
+print("===== ONLINE EXAMINATION =====")
+for question, answer in questions:
+    print("\n" + question)
+    user_answer = input("Your answer: ")
+    if user_answer.lower() == answer.lower():
+        print("Correct!")
+        score += 1
+    else:
+        print("Wrong! Answer:", answer)
+print("\n===== RESULT =====")
+print("Total Questions:", len(questions))
+print("Correct Answers:", score)
+print("Score:", score, "/", len(questions))
+
+OUTPUT:
+===== ONLINE EXAMINATION =====
+What is the capital of India?
+Your answer: AMARAVATHI
+Wrong! Answer: Delhi
+Which language is used for AI?
+Your answer: JAVA
+Wrong! Answer: Python
+2 + 2 = ?
+Your answer: 4
+Correct!
+===== RESULT =====
+Total Questions: 3
+Correct Answers: 1
+Score: 1 / 3
